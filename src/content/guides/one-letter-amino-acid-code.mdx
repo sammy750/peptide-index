@@ -1,0 +1,50 @@
+---
+title: The one-letter amino acid code
+summary: A reference table mapping the twenty standard amino acids to their one- and three-letter codes and side-chain class.
+tags:
+  - nomenclature
+  - reference
+order: 12
+status: published
+updated: 2026-06-23
+---
+
+Peptide sequences are written compactly using **one-letter codes** for the twenty standard
+amino acids. The `sequenceShort` field in each entry uses this notation, and it is what the
+fingerprint and residue search are built on.
+
+| Code | 3-letter | Amino acid | Class |
+| :--: | :------: | ---------- | ----- |
+| A | Ala | Alanine | Nonpolar |
+| R | Arg | Arginine | Basic (+) |
+| N | Asn | Asparagine | Polar |
+| D | Asp | Aspartic acid | Acidic (−) |
+| C | Cys | Cysteine | Polar |
+| E | Glu | Glutamic acid | Acidic (−) |
+| Q | Gln | Glutamine | Polar |
+| G | Gly | Glycine | Nonpolar |
+| H | His | Histidine | Basic (+) |
+| I | Ile | Isoleucine | Nonpolar |
+| L | Leu | Leucine | Nonpolar |
+| K | Lys | Lysine | Basic (+) |
+| M | Met | Methionine | Nonpolar |
+| F | Phe | Phenylalanine | Nonpolar |
+| P | Pro | Proline | Nonpolar |
+| S | Ser | Serine | Polar |
+| T | Thr | Threonine | Polar |
+| W | Trp | Tryptophan | Nonpolar |
+| Y | Tyr | Tyrosine | Polar |
+| V | Val | Valine | Nonpolar |
+
+<Callout type="warning">
+The class column is a simplification. Histidine in particular sits near neutral pH and is
+sometimes grouped differently; cysteine and tyrosine have nuances too. Use the classes as a
+visual aid, not a substitute for a chemistry reference.
+</Callout>
+
+## Writing a sequence
+
+Read sequences **N-terminus to C-terminus**, left to right. For example, the copper tripeptide
+GHK is glycine–histidine–lysine. Non-standard residues (D-amino acids, modifications, or a
+bound metal) don't have one-letter codes — note them in the human-readable `sequence` field and
+the body instead.

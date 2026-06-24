@@ -1,0 +1,48 @@
+---
+title: How to read this index
+summary: What each part of a peptide entry means — the fingerprint, the property table, statuses, and how search works.
+tags:
+  - meta
+  - reference
+order: 11
+status: published
+updated: 2026-06-23
+---
+
+Every peptide in this index follows the same layout. This short guide explains each part so
+you can scan an entry quickly.
+
+## The sequence fingerprint
+
+When an entry has a sequence, the coloured strip near the top is its **fingerprint**. Each
+cell is one residue, coloured by physico-chemical class:
+
+- **Nonpolar** — hydrophobic side chains
+- **Polar** — uncharged, hydrophilic side chains
+- **Acidic** — negatively charged at neutral pH
+- **Basic** — positively charged at neutral pH
+
+The strip is followed by the one-letter sequence (same colours) and a composition bar. If an
+entry has no defined sequence — a mixture or conjugate — the fingerprint is omitted entirely.
+
+## The property table
+
+The sidebar lists structured fields: molecular formula and weight, CAS number, PubChem CID
+(linked, when present), half-life, and synonyms. Only the fields that exist for a given entry
+are shown, so the table never has empty rows.
+
+## Statuses
+
+<Callout>
+Entries can be marked <code>draft</code>, <code>example</code>, or <code>published</code>.
+</Callout>
+
+- `draft` — hidden everywhere; useful while an entry is being written.
+- `example` — visible but flagged as illustrative seed data, for entries that are placeholders.
+- `published` — a normal, live entry. This is also the default if no status is set.
+
+## Search
+
+The search box matches an entry's **name, aliases, tags, category, summary** and — for
+peptides — its **one-letter residue string**. So searching `GHK` finds the copper tripeptide
+by its sequence, even though "GHK" never appears in the prose.
