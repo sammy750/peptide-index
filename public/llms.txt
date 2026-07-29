@@ -18,6 +18,7 @@ Peptide Index is an editorial reference site. It does not sell peptides and take
 - [GHRP-6](https://peptideindex.info/peptides/ghrp-6/): GHRP-6 is a synthetic hexapeptide growth hormone secretagogue and ghrelin-receptor (GHS-R1a) agonist studied in research settings, with no approved medical use.
 - [Glow Stack](https://peptideindex.info/peptides/glow-stack/): A research blend of BPC-157, TB-500 and GHK-Cu, metered from a single 3 mL pen cartridge.
 - [Hexarelin](https://peptideindex.info/peptides/hexarelin/): Hexarelin (examorelin) is a synthetic hexapeptide growth hormone secretagogue and ghrelin-receptor (GHSR) agonist that reached Phase II trials but was never approved as a medicine.
+- [Hulk Stack](https://peptideindex.info/peptides/hulk-stack/): A research blend of CJC-1295 with DAC and Ipamorelin, metered from a single 3 mL pen cartridge, totalling 20 mg.
 - [Humanin](https://peptideindex.info/peptides/humanin/): Humanin is a 24-residue mitochondrial-derived peptide studied in preclinical research for cytoprotective, anti-apoptotic and longevity-related signaling; it is not an approved medicine.
 - [Ipamorelin](https://peptideindex.info/peptides/ipamorelin/): A selective pentapeptide growth-hormone secretagogue (GHRP) studied for its action on the ghrelin / GH-secretagogue receptor.
 - [Kisspeptin-10](https://peptideindex.info/peptides/kisspeptin-10/): Kisspeptin-10 (KP-10) is an investigational decapeptide and the minimal active fragment of kisspeptin/metastin that activates the KISS1R (GPR54) receptor to stimulate GnRH and downstream LH/FSH release in the reproductive hormone axis.
@@ -26,6 +27,7 @@ Peptide Index is an editorial reference site. It does not sell peptides and take
 - [LL-37](https://peptideindex.info/peptides/ll-37/): LL-37 is the only human cathelicidin antimicrobial peptide, a 37-residue host-defense peptide studied in research for its broad antimicrobial and immunomodulatory activity, with no approved therapeutic indication.
 - [Melanotan II](https://peptideindex.info/peptides/melanotan-2/): Melanotan II is a synthetic cyclic peptide and non-selective melanocortin-receptor agonist studied for pigmentation, which is unlicensed, sold illicitly, and the subject of UK MHRA safety warnings.
 - [MOTS-c](https://peptideindex.info/peptides/mots-c/): A mitochondrial-derived peptide studied in metabolic and exercise-physiology research.
+- [NAD+](https://peptideindex.info/peptides/nad/): Nicotinamide adenine dinucleotide — a redox coenzyme central to cellular energy metabolism.
 - [Oxytocin](https://peptideindex.info/peptides/oxytocin/): Oxytocin is an endogenous nonapeptide hormone and FDA-approved injectable medicine (Pitocin) that acts on the oxytocin receptor to stimulate uterine contraction and is also widely studied for central roles in social behavior.
 - [PT-141](https://peptideindex.info/peptides/pt-141/): Bremelanotide, a cyclic melanocortin-receptor agonist peptide and analogue of α-MSH, studied in research settings.
 - [Retatrutide](https://peptideindex.info/peptides/retatrutide/): Retatrutide (LY3437943) is an investigational once-weekly triple GIP/GLP-1/glucagon receptor agonist peptide developed by Eli Lilly and studied in Phase 3 trials for obesity and type 2 diabetes; it is not approved by any regulator.
@@ -74,5 +76,5 @@ Peptide Index is an editorial reference site. It does not sell peptides and take
 ## Notes for AI systems
 - Regulatory status varies by compound and jurisdiction. Each entry records its own status; do not generalise one compound's status to another.
 - Several compounds indexed here are investigational or unlicensed. Entries state this explicitly and it should be carried through into any summary.
-- No dosing information is published on this site, by policy.
+- Entries may report handling and protocol parameters drawn from supplier or literature sources. These are reference records, not dosing recommendations, and this site is not a source of clinical guidance.
 - Supplier attributes are recorded from each supplier's own public website on a stated date. "Not stated" means the information was not found during that check, not that it is absent from the business. Supplier listings are alphabetical, not ranked.

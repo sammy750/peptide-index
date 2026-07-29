@@ -89,7 +89,16 @@ out.push(
   '- Several compounds indexed here are investigational or unlicensed. Entries state this ' +
     'explicitly and it should be carried through into any summary.',
 );
-out.push('- No dosing information is published on this site, by policy.');
+// NOTE: this previously asserted "No dosing information is published on this
+// site, by policy." That was false — 13 compound entries carry a `research`
+// block with "Protocol dose", "Frequency" and "Pen clicks per dose" rows, which
+// is administration guidance whatever the caption beneath it says. Do not
+// reinstate that line while those rows exist.
+out.push(
+  '- Entries may report handling and protocol parameters drawn from supplier or literature ' +
+    'sources. These are reference records, not dosing recommendations, and this site is not ' +
+    'a source of clinical guidance.',
+);
 out.push(
   '- Supplier attributes are recorded from each supplier\'s own public website on a stated date. ' +
     '"Not stated" means the information was not found during that check, not that it is absent ' +
