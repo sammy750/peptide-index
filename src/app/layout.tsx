@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     description: SITE.description,
   },
   robots: { index: true, follow: true },
+  // Only emitted once a token is set in site.ts — an empty string would
+  // otherwise render a meaningless empty verification tag.
+  ...(SITE.googleSiteVerification
+    ? { verification: { google: SITE.googleSiteVerification } }
+    : {}),
 };
 
 export default function RootLayout({
