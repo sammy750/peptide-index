@@ -12,6 +12,8 @@ import {
   type Peptide,
   type PeptideFrontmatter,
   type SearchRecord,
+  type Vendor,
+  type VendorFrontmatter,
 } from "./types";
 import { normaliseResidues, readingTime } from "./utils";
 
@@ -23,6 +25,7 @@ const CONTENT_ROOT = path.join(process.cwd(), "src", "content");
 const PEPTIDES_DIR = path.join(CONTENT_ROOT, "peptides");
 const GUIDES_DIR = path.join(CONTENT_ROOT, "guides");
 const NEWS_DIR = path.join(CONTENT_ROOT, "news");
+const VENDORS_DIR = path.join(CONTENT_ROOT, "vendors");
 
 interface RawEntry<T> {
   slug: string;
@@ -137,6 +140,44 @@ export function getAllNews(): NewsItem[] {
     .map(({ slug, data }) => ({ ...data, slug, status: statusOf(data) }))
     .filter((n) => isVisible(n.status))
     .sort((a, b) => (a.date < b.date ? 1 : -1));
+}
+
+// ---------------------------------------------------------------------------
+// Vendors
+// ---------------------------------------------------------------------------
+export function getAllVendors(): Vendor[] {
+  return readEntries<VendorFrontmatter>(VENDORS_DIR)
+    .map(({ slug, data }) => ({ ...data, slug, status: statusOf(data) }))
+    .filter((v) => isVisible(v.status))
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+export function getVendorSlugs(): string[] {
+  return getAllVendors().map((v) => v.slug);
+}
+
+export function getVendor(
+  slug: string,
+): { vendor: Vendor; content: string } | null {
+  const entry = readEntries<VendorFrontmatter>(VENDORS_DIR).find(
+    (e) => e.slug === slug,
+  );
+  if (!entry) return null;
+  const status = statusOf(entry.data);
+  if (!isVisible(status)) return null;
+  return {
+    vendor: { ...entry.data, slug: entry.slug, status },
+    content: entry.content,
+  };
+}
+
+/** Vendors listed as stocking a compound, resolved from `stockedBy` slugs. */
+export function getVendorsBySlugs(slugs: string[] = []): Vendor[] {
+  if (!slugs.length) return [];
+  const all = getAllVendors();
+  return slugs
+    .map((s) => all.find((v) => v.slug === s))
+    .filter((v): v is Vendor => Boolean(v));
 }
 
 // ---------------------------------------------------------------------------

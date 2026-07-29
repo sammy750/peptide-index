@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "In the Media",
   description:
     "How public figures — podcasters, athletes, clinicians and officials — have discussed research peptides. Reference material, balanced and attributed; inclusion is not endorsement.",
+  alternates: { canonical: "/media/" },
 };
 
 export default function MediaPage() {

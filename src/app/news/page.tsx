@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "News",
   description:
     "Curated peptide news — regulatory moves, science, industry and culture. Headlines link out to the original source.",
+  alternates: { canonical: "/news/" },
 };
 
 export default function NewsPage() {

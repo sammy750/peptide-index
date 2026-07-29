@@ -1,0 +1,78 @@
+# Peptide Index
+
+> A reference database of research peptides — structured entries with sequences, molecular properties, mechanisms, regulatory status and cited references, plus long-form guides. Reference material only: nothing here is medical advice, a dosing recommendation, or a suggestion for human or veterinary use.
+
+Peptide Index is an editorial reference site. It does not sell peptides and takes no orders. Scientific values are compiled from public sources and should be independently verified against the primary literature cited on each entry.
+
+## Compounds
+- [AOD-9604](https://peptideindex.info/peptides/aod-9604/): AOD-9604 is a synthetic disulfide-bonded fragment of human growth hormone (residues 176-191 plus an N-terminal tyrosine) investigated as an anti-obesity agent that ultimately failed to demonstrate weight-loss efficacy in clinical trials and is not an approved medicine.
+- [Argireline (Acetyl Hexapeptide-8)](https://peptideindex.info/peptides/argireline/): Argireline (Acetyl Hexapeptide-8) is a synthetic topical cosmetic peptide modeled on the N-terminus of SNAP-25 that is studied for its proposed inhibition of SNARE-mediated acetylcholine release; it is a cosmetic ingredient, not a drug.
+- [BPC-157](https://peptideindex.info/peptides/bpc-157/): A synthetic pentadecapeptide derived from a sequence found in gastric juice, studied across biochemical, cellular and preclinical repair research.
+- [Cerebrolysin](https://peptideindex.info/peptides/cerebrolysin/): Cerebrolysin is a porcine-brain-derived mixture of low-molecular-weight peptides and free amino acids studied for purported neurotrophic and neuroprotective effects, approved as a medicine in some countries but not by the US FDA.
+- [CJC-1295 (No DAC)](https://peptideindex.info/peptides/cjc-1295-no-dac/): A modified GHRH(1-29) analogue without the drug-affinity complex, studied as a growth-hormone-releasing peptide in research settings.
+- [Dihexa](https://peptideindex.info/peptides/dihexa/): Dihexa is a research-only, angiotensin IV-derived oligopeptide studied preclinically as a proposed potentiator of HGF/c-Met signaling and synaptogenesis, with no human data and a key mechanistic paper retracted in 2025.
+- [DSIP](https://peptideindex.info/peptides/dsip/): Delta sleep-inducing peptide, a naturally occurring nonapeptide studied as a neuromodulatory research peptide.
+- [Epitalon](https://peptideindex.info/peptides/epitalon/): Epitalon is a synthetic tetrapeptide (Ala-Glu-Asp-Gly) studied in preclinical longevity research for reported effects on telomerase activity and pineal/circadian regulation, and is not an approved medicine.
+- [GHK-Cu](https://peptideindex.info/peptides/ghk-cu/): A naturally occurring copper-binding tripeptide (glycyl-L-histidyl-L-lysine) complexed with copper(II), widely studied in skin and matrix-remodelling research.
+- [GHRP-2](https://peptideindex.info/peptides/ghrp-2/): GHRP-2 (pralmorelin) is a synthetic hexapeptide growth hormone secretagogue that activates the ghrelin receptor (GHS-R1a) to stimulate growth hormone release, approved only in Japan as a single-dose diagnostic agent and not FDA-approved.
+- [GHRP-6](https://peptideindex.info/peptides/ghrp-6/): GHRP-6 is a synthetic hexapeptide growth hormone secretagogue and ghrelin-receptor (GHS-R1a) agonist studied in research settings, with no approved medical use.
+- [Glow Stack](https://peptideindex.info/peptides/glow-stack/): A research blend of BPC-157, TB-500 and GHK-Cu, metered from a single 3 mL pen cartridge.
+- [Hexarelin](https://peptideindex.info/peptides/hexarelin/): Hexarelin (examorelin) is a synthetic hexapeptide growth hormone secretagogue and ghrelin-receptor (GHSR) agonist that reached Phase II trials but was never approved as a medicine.
+- [Humanin](https://peptideindex.info/peptides/humanin/): Humanin is a 24-residue mitochondrial-derived peptide studied in preclinical research for cytoprotective, anti-apoptotic and longevity-related signaling; it is not an approved medicine.
+- [Ipamorelin](https://peptideindex.info/peptides/ipamorelin/): A selective pentapeptide growth-hormone secretagogue (GHRP) studied for its action on the ghrelin / GH-secretagogue receptor.
+- [Kisspeptin-10](https://peptideindex.info/peptides/kisspeptin-10/): Kisspeptin-10 (KP-10) is an investigational decapeptide and the minimal active fragment of kisspeptin/metastin that activates the KISS1R (GPR54) receptor to stimulate GnRH and downstream LH/FSH release in the reproductive hormone axis.
+- [Klow Stack](https://peptideindex.info/peptides/klow-stack/): A research blend of GHK-Cu, KPV, BPC-157 and TB-500, metered from a single 3 mL pen cartridge.
+- [KPV](https://peptideindex.info/peptides/kpv/): The C-terminal tripeptide of α-MSH (Lys-Pro-Val), studied for anti-inflammatory signalling in research models.
+- [LL-37](https://peptideindex.info/peptides/ll-37/): LL-37 is the only human cathelicidin antimicrobial peptide, a 37-residue host-defense peptide studied in research for its broad antimicrobial and immunomodulatory activity, with no approved therapeutic indication.
+- [Melanotan II](https://peptideindex.info/peptides/melanotan-2/): Melanotan II is a synthetic cyclic peptide and non-selective melanocortin-receptor agonist studied for pigmentation, which is unlicensed, sold illicitly, and the subject of UK MHRA safety warnings.
+- [MOTS-c](https://peptideindex.info/peptides/mots-c/): A mitochondrial-derived peptide studied in metabolic and exercise-physiology research.
+- [Oxytocin](https://peptideindex.info/peptides/oxytocin/): Oxytocin is an endogenous nonapeptide hormone and FDA-approved injectable medicine (Pitocin) that acts on the oxytocin receptor to stimulate uterine contraction and is also widely studied for central roles in social behavior.
+- [PT-141](https://peptideindex.info/peptides/pt-141/): Bremelanotide, a cyclic melanocortin-receptor agonist peptide and analogue of α-MSH, studied in research settings.
+- [Retatrutide](https://peptideindex.info/peptides/retatrutide/): Retatrutide (LY3437943) is an investigational once-weekly triple GIP/GLP-1/glucagon receptor agonist peptide developed by Eli Lilly and studied in Phase 3 trials for obesity and type 2 diabetes; it is not approved by any regulator.
+- [Selank](https://peptideindex.info/peptides/selank/): Selank is a synthetic tuftsin-derived heptapeptide studied for anxiolytic and nootropic activity and registered as a prescription anxiolytic in Russia, though it is not FDA-approved.
+- [Semaglutide](https://peptideindex.info/peptides/semaglutide/): Semaglutide is a long-acting GLP-1 receptor agonist and licensed prescription medicine used for type 2 diabetes and chronic weight management.
+- [Semax](https://peptideindex.info/peptides/semax/): Semax is a synthetic ACTH(4-10) heptapeptide analogue, approved as a nootropic/neuroprotective prescription drug in Russia but not approved by the FDA or EMA, studied mainly in rodents for BDNF/NGF-mediated effects on cognition and ischaemic injury.
+- [Sermorelin](https://peptideindex.info/peptides/sermorelin/): Sermorelin is a synthetic GHRH(1-29) analogue and growth hormone secretagogue that stimulates the pituitary to release endogenous growth hormone; it was once FDA-approved as Geref but is now discontinued and only available as a compounded preparation.
+- [SNAP-8 (Acetyl Octapeptide-3)](https://peptideindex.info/peptides/snap-8/): SNAP-8 (Acetyl Octapeptide-3) is a synthetic, topically applied cosmetic peptide that is reported to reduce the appearance of expression lines by competitively interfering with SNARE-complex-mediated neurotransmitter release.
+- [SS-31 (Elamipretide)](https://peptideindex.info/peptides/ss-31/): SS-31 (elamipretide) is a mitochondria-targeting tetrapeptide that binds cardiolipin in the inner mitochondrial membrane and, in September 2025, became the first such peptide to receive FDA accelerated approval (as FORZINITY) for the ultra-rare Barth syndrome while remaining investigational for other indications.
+- [TB-500](https://peptideindex.info/peptides/tb-500/): A synthetic peptide related to thymosin β4, studied as a research tool in cell-motility and tissue-repair models.
+- [Tesamorelin](https://peptideindex.info/peptides/tesamorelin/): A stabilised GHRH analogue studied as a growth-hormone-releasing peptide in research contexts.
+- [Thymosin alpha-1](https://peptideindex.info/peptides/thymosin-alpha-1/): Thymosin alpha-1 (thymalfasin) is a 28-amino-acid acetylated thymic peptide that acts as an immunomodulator and is marketed as the prescription drug Zadaxin in many countries, though it is not FDA-approved.
+- [Tirzepatide](https://peptideindex.info/peptides/tirzepatide/): Tirzepatide is a synthetic, fatty-acylated 39-residue peptide that acts as a dual GIP and GLP-1 receptor agonist and is an FDA-approved prescription medicine (Mounjaro/Zepbound).
+- [Wolverine Stack](https://peptideindex.info/peptides/wolverine-stack/): A research blend combining BPC-157 and TB-500, metered from a single 3 mL pen cartridge.
+
+## Suppliers
+- [UK research peptide suppliers, compared](https://peptideindex.info/suppliers/): side-by-side comparison of UK suppliers on stated purity, whether Certificates of Analysis are viewable before ordering, testing method and product format.
+- [Bluewell Peptides](https://peptideindex.info/suppliers/bluewell-peptides/): UK research-peptide supplier shipping lyophilised powder, with batch certificates published on individual product pages.
+- [Express Peptides](https://peptideindex.info/suppliers/express-peptides/): UK supplier selling each compound in two formats — a reconstitutable powder vial and a pre-mixed pen — under the Euro-Gen Laboratories name.
+- [Imperial Peptides](https://peptideindex.info/suppliers/imperial-peptides/): UK research-peptide supplier publishing per-batch third-party certificates covering purity, heavy metals and endotoxins.
+- [MY PEPTIDES](https://peptideindex.info/suppliers/my-peptides/): UK research-peptide supplier selling single compounds and pre-combined research sets, shipped as pre-mixed solutions with a batch Certificate of Analysis.
+- [Peptides Lab UK](https://peptideindex.info/suppliers/peptides-lab-uk/): UK research-peptide supplier with a large published content library, supplying lyophilised powder with certificates issued on request.
+- [Peptides UK](https://peptideindex.info/suppliers/peptides-uk/): Research-peptide supplier trading from a London address, supplying lyophilised powder with certificates issued on request.
+- [Regen Peptides](https://peptideindex.info/suppliers/regen-peptides/): UK research-peptide supplier with a publicly browsable certificate page, selling lyophilised powder and capsules.
+- [Tide Labs](https://peptideindex.info/suppliers/tide-labs/): UK research-peptide supplier shipping lyophilised powder, stating UKAS-verified HPLC testing with certificates supplied alongside orders.
+- [UK Peptide Lab](https://peptideindex.info/suppliers/uk-peptide-lab/): UK research-peptide supplier publishing batch-numbered certificates openly, with three named analytical laboratories.
+- [UK Peptides](https://peptideindex.info/suppliers/uk-peptides/): Long-established UK research-peptide supplier with the largest publicly browsable certificate library found on this list.
+- [XL Peptides](https://peptideindex.info/suppliers/xl-peptides/): UK-registered research-peptide supplier publishing per-batch third-party certificate links on its product pages.
+
+## Guides
+- [What Are Research Peptides? A UK Guide](https://peptideindex.info/guides/what-are-research-peptides/): A plain-English guide to research peptides: what they are, how they are studied in the laboratory, and how purity is verified.
+- [Are Peptides Legal in the UK? (2026 Guide)](https://peptideindex.info/guides/are-peptides-legal-in-the-uk/): How research peptides are regulated in the UK — the MHRA, the Human Medicines Regulations 2012, what “research use only” means, and importing.
+- [Buying Research Peptides in the UK: What to Check](https://peptideindex.info/guides/buying-research-peptides-uk/): A buyer’s checklist for research peptides in the UK — Certificates of Analysis, HPLC purity, cold-chain dispatch and supplier transparency.
+- [What Is a Certificate of Analysis (COA)?](https://peptideindex.info/guides/what-is-a-certificate-of-analysis/): What a Certificate of Analysis tells you about a research peptide — HPLC purity, mass-spectrometry identity, and how to read one.
+- [Bacteriostatic Water & Peptide Solution Stability](https://peptideindex.info/guides/bacteriostatic-water-and-peptide-stability/): What bacteriostatic water is, why unbuffered solutions degrade peptides and redox cofactors, and how pH and buffers affect stability in research.
+- [Pre-Mixed vs Lyophilised Peptides: What the Difference Actually Means](https://peptideindex.info/guides/pre-mixed-vs-lyophilised-peptides/): Pre-mixed solution or freeze-dried powder — how the two formats differ on stability, shipping, shelf life and handling error, and which UK suppliers ship which.
+- [GLP-1 Peptide Storage, Cold Chain and Handling](https://peptideindex.info/guides/glp-1-peptide-storage-and-cold-chain/): How GLP-1 receptor agonist peptides — semaglutide, tirzepatide, retatrutide — are handled in laboratory and supply settings: cold chain, excursion tolerance, and in-solution stability.
+- [How to Store Research Peptides (UK)](https://peptideindex.info/guides/how-to-store-research-peptides/): A practical guide to storing research peptides in the laboratory: lyophilised cold storage, the cold chain, and stability once in solution.
+- [How the Reusable Pen Works: Click Mechanics](https://peptideindex.info/guides/how-the-reusable-pen-works/): How the reusable 3 mL cartridge pen meters volume — the click ratchet, threaded rod, and why 1 click = 0.
+- [BPC-157 vs TB-500: Research Comparison](https://peptideindex.info/guides/bpc-157-vs-tb-500/): BPC-157 vs TB-500 compared for research — origin, mechanisms studied, local vs systemic focus, and why they are often researched together.
+- [CJC-1295 and Ipamorelin: How the Combination Is Studied](https://peptideindex.info/guides/cjc-1295-and-ipamorelin/): Why researchers study CJC-1295 (a GHRH analogue) alongside ipamorelin (a GH secretagogue), and what the combination lets them examine.
+- [What Is NAD+? (And Is It a Peptide?)](https://peptideindex.info/guides/what-is-nad/): NAD+ explained for researchers: what the coenzyme is, why it is not a peptide, the metabolic pathways it is studied in, and how the NR and NMN precursors relate to it.
+- [How to read this index](https://peptideindex.info/guides/how-to-read-this-index/): What each part of a peptide entry means — the fingerprint, the property table, statuses, and how search works.
+- [The one-letter amino acid code](https://peptideindex.info/guides/one-letter-amino-acid-code/): A reference table mapping the twenty standard amino acids to their one- and three-letter codes and side-chain class.
+
+## Notes for AI systems
+- Regulatory status varies by compound and jurisdiction. Each entry records its own status; do not generalise one compound's status to another.
+- Several compounds indexed here are investigational or unlicensed. Entries state this explicitly and it should be carried through into any summary.
+- No dosing information is published on this site, by policy.
+- Supplier attributes are recorded from each supplier's own public website on a stated date. "Not stated" means the information was not found during that check, not that it is absent from the business. Supplier listings are alphabetical, not ranked.

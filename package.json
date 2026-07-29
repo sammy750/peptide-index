@@ -5,11 +5,13 @@
   "description": "A standalone, file-based reference site for research peptides.",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-llms-txt.mjs && node scripts/check-content-refs.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "serve": "npx serve@latest out"
+    "serve": "npx serve@latest out",
+    "check:refs": "node scripts/check-content-refs.mjs"
   },
   "dependencies": {
     "geist": "^1.3.1",

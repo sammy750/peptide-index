@@ -107,6 +107,15 @@ export interface PeptideFrontmatter {
   /** Slugs of related peptide entries. */
   relatedPeptides?: string[];
 
+  /**
+   * Slugs of vendors (src/content/vendors) known to stock this compound,
+   * rendered as a "Where to buy" block. Omit entirely for compounds no listed
+   * vendor sells — those entries then carry no commercial block at all.
+   * Order here is the display order; keep it alphabetical so it doesn't read
+   * as a ranking.
+   */
+  stockedBy?: string[];
+
   /** Citations / further reading. */
   references?: PeptideReference[];
 
@@ -137,6 +146,86 @@ export interface GuideFrontmatter {
   updated?: string;
   /** Lower numbers sort first in the guides list. */
   order?: number;
+  /**
+   * Absolute cross-domain canonical. Set ONLY where this guide duplicates one
+   * published on my-peptides.co.uk, so the ranking signal consolidates there
+   * instead of the two pages competing. Omit for guides original to this site —
+   * they self-canonicalise.
+   *
+   * Must be the exact live URL with NO trailing slash: my-peptides.co.uk emits
+   * its guide canonicals slash-less, while this site runs `trailingSlash: true`.
+   * Adding a slash here points the canonical at a redirect, which wastes it.
+   */
+  canonicalUrl?: string;
+}
+
+// ---------------------------------------------------------------------------
+// Vendors
+// ---------------------------------------------------------------------------
+// Facts published about a named third-party company must be checkable against
+// that company's own website, because getting one wrong is a defamation
+// problem, not just an accuracy one. So EVERY field here is optional: an
+// attribute we could not verify is simply absent, and the UI renders it as
+// "Not stated" rather than asserting anything. Never populate a field by
+// inference — leave it out.
+
+/** How a vendor makes Certificates of Analysis available. */
+export type CoaAccess =
+  /** A COA library anyone can browse without ordering. */
+  | "public-library"
+  /** COAs are said to ship with orders, but cannot be viewed beforehand. */
+  | "with-order"
+  /** No COA provision stated on their site. */
+  | "not-stated";
+
+/** How a vendor presents its products. */
+export type ProductFormat = "pre-mixed" | "lyophilised" | "both" | "not-stated";
+
+export interface VendorFrontmatter {
+  /** Required. Company/trading name as they present it. */
+  name: string;
+  /** Required. Homepage URL. */
+  url: string;
+  /** Required. One or two neutral sentences. */
+  summary: string;
+
+  slug?: string;
+
+  /** Purity figure quoted verbatim from their site, e.g. "99%+". */
+  purityClaim?: string;
+  coaAccess?: CoaAccess;
+  /** Direct URL to a publicly browsable COA library, where one exists. */
+  coaLibraryUrl?: string;
+  /** Testing method as they describe it, e.g. "HPLC + mass spectrometry". */
+  testingMethod?: string;
+  format?: ProductFormat;
+  /** Dispatch/delivery wording quoted from their site. */
+  dispatch?: string;
+  ukBased?: boolean;
+  /** Companies House number, where published. */
+  companyNumber?: string;
+  /** Approximate catalogue size, counted from their sitemap or shop page. */
+  catalogueSize?: number;
+  /** Whether /llms.txt returns a real file. */
+  llmsTxt?: boolean;
+
+  /** Additional verified, non-editorialising facts. */
+  notes?: string[];
+
+  /**
+   * ISO date these facts were last checked against the vendor's own site.
+   * Rendered on the page — competitor facts go stale, and saying when we
+   * looked is both honest and the thing that makes a stale claim defensible.
+   */
+  verifiedOn?: string;
+
+  status?: EntryStatus;
+  updated?: string;
+}
+
+export interface Vendor extends VendorFrontmatter {
+  slug: string;
+  status: EntryStatus;
 }
 
 export interface Guide extends GuideFrontmatter {

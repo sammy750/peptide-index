@@ -6,6 +6,7 @@ import { getAllPeptides } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Peptides",
   description: "Browse and filter the full index of research peptide entries.",
+  alternates: { canonical: "/peptides/" },
 };
 
 export default function PeptidesPage() {

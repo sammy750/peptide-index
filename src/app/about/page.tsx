@@ -5,6 +5,7 @@ import { DISCLAIMER, SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description: `What ${SITE.name} is, how it is built, and its editorial stance.`,
+  alternates: { canonical: "/about/" },
 };
 
 export default function AboutPage() {
@@ -32,11 +33,25 @@ export default function AboutPage() {
           and handling.
         </p>
 
-        <h2>Editorial stance</h2>
+        <h2>How compound entries are written</h2>
         <p>
-          Entries are reference material, not recommendations. Copy is kept factual, claims are
-          attributed to primary sources, and nothing is framed as dosing or medical advice. Where a
-          figure has not been verified it should be marked as such.
+          Compound entries are reference material, not recommendations. Copy is kept factual, claims
+          are attributed to primary sources, and nothing is framed as dosing or medical advice. Where
+          a figure has not been verified it is marked as such.
+        </p>
+
+        <h2>Supplier listings</h2>
+        <p>
+          The supplier comparison is a different kind of page and should be read differently.
+          Attributes there are recorded from each supplier&rsquo;s own public website on a stated
+          date, and cover things you can check yourself — published purity figures, whether
+          Certificates of Analysis can be viewed before ordering, testing method, and product format.
+          They go out of date, and &ldquo;not stated&rdquo; means we did not find something on a
+          supplier&rsquo;s site rather than that it is absent from their business.
+        </p>
+        <p>
+          Listings are ordered alphabetically rather than ranked, and inclusion is not an
+          endorsement. Verify anything that matters directly with a supplier before buying from them.
         </p>
 
         <Disclaimer />

@@ -18,9 +18,14 @@ export function generateMetadata({
 }): Metadata {
   const result = getGuide(params.slug);
   if (!result) return {};
+  // Guides that duplicate a my-peptides.co.uk page declare `canonicalUrl` in
+  // frontmatter and point there; everything else self-canonicalises. The
+  // trailing slash on the self-canonical matches `trailingSlash: true`.
+  const canonical = result.guide.canonicalUrl ?? `/guides/${params.slug}/`;
   return {
     title: result.guide.title,
     description: result.guide.summary,
+    alternates: { canonical },
     openGraph: { title: result.guide.title, description: result.guide.summary },
   };
 }

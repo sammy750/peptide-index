@@ -9,7 +9,12 @@ import { ResearchParameters } from "@/components/research-parameters";
 import { PeptideScience } from "@/components/peptide-science";
 import { SpecTable } from "@/components/spec-table";
 import { Chip, ExampleBanner, SectionLabel, StatusBadge } from "@/components/ui";
-import { getAllPeptides, getPeptide, getPeptideSlugs } from "@/lib/content";
+import {
+  getAllPeptides,
+  getPeptide,
+  getPeptideSlugs,
+  getVendorsBySlugs,
+} from "@/lib/content";
 
 export function generateStaticParams() {
   return getPeptideSlugs().map((slug) => ({ slug }));
@@ -27,6 +32,7 @@ export function generateMetadata({
   return {
     title: peptide.name,
     description: peptide.summary,
+    alternates: { canonical: `/peptides/${params.slug}/` },
     openGraph: { title: `${peptide.name}${aliasPart}`, description: peptide.summary },
   };
 }
@@ -40,6 +46,11 @@ export default function PeptidePage({ params }: { params: { slug: string } }) {
   const related = (peptide.relatedPeptides ?? [])
     .map((s) => allPeptides.find((p) => p.slug === s))
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+  // Alphabetical by name so the order can't be read as a ranking.
+  const stockists = getVendorsBySlugs(peptide.stockedBy).sort((a, b) =>
+    a.name.localeCompare(b.name),
+  );
 
   return (
     <article className="mx-auto max-w-content px-5 py-10">
@@ -145,6 +156,42 @@ export default function PeptidePage({ params }: { params: { slug: string } }) {
                       {p.name} →
                     </Link>
                   ))}
+                </div>
+              </div>
+            ) : null}
+
+            {stockists.length ? (
+              <div>
+                <SectionLabel>Where to buy</SectionLabel>
+                <div className="mt-3 rounded-lg border border-line px-4 py-3">
+                  <p className="text-sm text-muted">
+                    Listed suppliers that stock {peptide.name}, in alphabetical
+                    order:
+                  </p>
+                  <ul className="mt-3 space-y-2">
+                    {stockists.map((v) => (
+                      <li key={v.slug}>
+                        <Link
+                          href={`/suppliers/${v.slug}/`}
+                          className="text-sm text-ink hover:underline"
+                        >
+                          {v.name} →
+                        </Link>
+                        {v.coaAccess === "public-library" ? (
+                          <span className="ml-2 font-mono text-[11px] text-muted">
+                            public COAs
+                          </span>
+                        ) : null}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-3 font-mono text-[11px] leading-relaxed text-muted">
+                    Listing is not an endorsement. Ordering is not a ranking. All
+                    compounds referenced are for in-vitro laboratory research only.{" "}
+                    <Link href="/suppliers/" className="underline">
+                      Compare suppliers
+                    </Link>
+                  </p>
                 </div>
               </div>
             ) : null}

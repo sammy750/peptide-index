@@ -22,6 +22,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   return {
     title: `${m.name} on peptides`,
     description: m.quote,
+    alternates: { canonical: `/media/${params.slug}/` },
     openGraph: { title: `${m.name} on peptides`, description: m.quote },
   };
 }

@@ -6,6 +6,7 @@ import { getAllGuides } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Guides",
   description: "Long-form reference guides on research peptides.",
+  alternates: { canonical: "/guides/" },
 };
 
 export default function GuidesPage() {

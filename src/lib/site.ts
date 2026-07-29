@@ -9,6 +9,7 @@ export const SITE = {
   url: "https://peptideindex.info",
   nav: [
     { href: "/peptides", label: "Peptides" },
+    { href: "/suppliers", label: "Suppliers" },
     { href: "/guides", label: "Guides" },
     { href: "/news", label: "News" },
     { href: "/media", label: "Media" },

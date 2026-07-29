@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
 import { GuideCard, PeptideCard } from "@/components/cards";
@@ -9,6 +10,13 @@ import { CategoryShowcase } from "@/components/category-showcase";
 import { getAllGuides, getAllNews, getAllPeptides, getSearchIndex } from "@/lib/content";
 import { MEDIA_MENTIONS } from "@/lib/media";
 import { formatDate } from "@/lib/utils";
+
+// Title/description come from the root layout; this only pins the canonical.
+// Kept here rather than in layout.tsx so it can never be inherited by a child
+// route that forgets to set its own.
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 export default function HomePage() {
   const peptides = getAllPeptides();
