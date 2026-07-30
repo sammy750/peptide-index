@@ -4,12 +4,36 @@ Generated 2026-07-29 from the live sitemap. **98 URLs total.**
 
 ## Do this first, before any individual requests
 
-1. **Submit the sitemap.** Search Console → Sitemaps → enter `sitemap.xml` → Submit.
-   This is worth more than every manual request below combined: it is how Google
-   discovers all 98 URLs, and it keeps working as content is added.
-   Full URL: `https://peptideindex.info/sitemap.xml`
+1. **Submit the sitemap.** Search Console → Sitemaps.
+
+   Type **`sitemap.xml`** and nothing else. The field already shows the property
+   URL as a fixed prefix, so pasting the full `https://peptideindex.info/sitemap.xml`
+   produces `https://peptideindex.info/https://peptideindex.info/sitemap.xml`, which
+   fails with **"Couldn't fetch"**. This is the most common cause of that error by a
+   wide margin.
+
+   This step is worth more than every manual request below combined: it is how
+   Google discovers all 98 URLs, and it keeps working as content is added.
+
 2. **Check Settings → Ownership verification** shows the property as verified.
 3. Only then work through the daily batches.
+
+### If it still says "Couldn't fetch"
+
+The file itself is fine — verified 2026-07-30: HTTP 200, `Content-Type:
+application/xml`, well-formed XML with the correct `sitemaps.org/schemas/sitemap/0.9`
+namespace, no redirects, and `robots.txt` points at it. So a fetch failure is a
+Search Console-side condition, not a hosting one.
+
+- **On a brand-new property this is usually transient.** Google frequently reports
+  "Couldn't fetch" before it has genuinely attempted a fetch, and it clears on its
+  own within a day or two. Leave it and re-check — do not delete and re-add the
+  sitemap repeatedly, which resets the queue rather than speeding it up.
+- **Confirm Google can reach the site at all** with URL Inspection on
+  `https://peptideindex.info/` → **Test live URL**. If that returns a valid page,
+  crawl access is fine and the sitemap status will follow.
+- The reported status can lag the real result: a sitemap often starts reporting
+  discovered URLs while still showing the old error.
 
 **Why batches:** "Request indexing" in the URL Inspection tool is rate-limited to
 roughly 10–12 URLs per property per day. Submitting more just gets refused, so the
